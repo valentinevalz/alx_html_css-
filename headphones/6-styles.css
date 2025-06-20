@@ -1,0 +1,13 @@
+.result-box {
+  background-color: #FF6565;
+  width: 120px;
+  height: 120px;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}

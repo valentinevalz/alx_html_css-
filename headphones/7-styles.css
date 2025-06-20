@@ -1,0 +1,63 @@
+.icon-item {
+  flex: 1 1 22%;
+  text-align: center;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+
+}
+
+.icon-item:hover {
+  transform: translateY(-10px) scale(1.05);
+  opacity: 0.9;
+}
+
+[class^="holberton_school-icon-"], 
+[class*=" holberton_school-icon-"] {
+  transition: transform 0.3s ease;
+}
+
+[class^="holberton_school-icon-"]:hover {
+  transform: rotate(10deg) scale(1.2);
+}
+
+.result-box {
+  background-color: #FF6565;
+  width: 120px;
+  height: 120px;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.result-box:hover {
+  transform: scale(1.1) rotate(3deg);
+  opacity: 0.95;
+}
+
+.icon-item,
+.result-box {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+.icon-item:nth-child(1) { animation-delay: 0.1s; }
+.icon-item:nth-child(2) { animation-delay: 0.2s; }
+.icon-item:nth-child(3) { animation-delay: 0.3s; }
+.icon-item:nth-child(4) { animation-delay: 0.4s; }
+
+.result-box:nth-child(1) { animation-delay: 0.5s; }
+.result-box:nth-child(2) { animation-delay: 0.6s; }
+.result-box:nth-child(3) { animation-delay: 0.7s; }
+.result-box:nth-child(4) { animation-delay: 0.8s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
